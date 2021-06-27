@@ -37,7 +37,7 @@ class Contacts_Activity : AppCompatActivity() {
             Contacts("Spinner","089675453","spiner@kotlin.jetbrains","https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTc5ODc0ODg2MzM0ODE4Mjkz/gettyimages-473806450.jpg")
         )
 
-        var coursesAdapter=ContactsAdapter(contactList)
+        var coursesAdapter=ContactsAdapter(contactList,baseContext)
         rvContacts.layoutManager= LinearLayoutManager(baseContext)
         rvContacts.adapter=coursesAdapter
 

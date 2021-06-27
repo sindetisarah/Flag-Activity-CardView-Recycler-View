@@ -37,6 +37,9 @@ class ContactsAdapter(var contactList: List<Contacts>,var context: Context) :Rec
             intent.putExtra("name",currentContact.name)
             intent.putExtra("phone",currentContact.phoneNumber)
             intent.putExtra("email",currentContact.email)
+            intent.putExtra("image",currentContact.imageUrl)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+
             context.startActivity(intent)
         }
 

@@ -15,6 +15,12 @@ class ViewContactActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_contact)
+        tvname.findViewById<TextView>(R.id.tvname)
+        viewPhone.findViewById<TextView>(R.id.tvphonenumber)
+        viewEmail.findViewById<TextView>(R.id.tvemail)
+        viewImage.findViewById<TextView>(R.id.imgView)
+
+
         var nameIntent=intent.getStringExtra("name")
         var emailIntent=intent.getStringExtra("email")
         var phoneIntent=intent.getStringExtra("phone")
@@ -29,13 +35,3 @@ class ViewContactActivity : AppCompatActivity() {
 
     }
 }
-//var imageIntent = intent.getStringExtra("image").toString()
-//Picasso.get()
-//.load(imageIntent)
-//.into(imgView)
-//
-//tvNameView.text = intentName
-//tvPhoneView.text = intentPhone
-//tvEmailView.text = emailIntent
-
-
