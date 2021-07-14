@@ -18,7 +18,7 @@ class ViewContactActivity : AppCompatActivity() {
         tvname.findViewById<TextView>(R.id.tvname)
         viewPhone.findViewById<TextView>(R.id.tvphonenumber)
         viewEmail.findViewById<TextView>(R.id.tvemail)
-        viewImage.findViewById<TextView>(R.id.imgView)
+        viewImage.findViewById<ImageView>(R.id.imgView)
 
 
         var nameIntent=intent.getStringExtra("name")
